@@ -1,0 +1,1680 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西西gogo人体 - 官方影像社区,记录身体美学与成长力量</title>
+<meta name="description" content="西西gogo人体官方网站，专注身体美学与自我成长的原创视频影像社区，汇聚专业创作者与品质内容，记录真实、温暖、有力量的身体故事。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4f6f'/%3E%3Ccircle cx='32' cy='24' r='9' fill='%23e8b04b'/%3E%3Cpath d='M14 56c2-13 9-19 18-19s16 6 18 19z' fill='%23e8b04b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --xg-ink:#1d2733;
+  --xg-deep:#2f4f6f;
+  --xg-blue:#3d6b93;
+  --xg-sky:#dfe9f2;
+  --xg-mist:#f2f6f9;
+  --xg-gold:#e8b04b;
+  --xg-gold-deep:#c78e2c;
+  --xg-line:#d3dee8;
+  --xg-white:#ffffff;
+  --xg-grey:#5d6d7c;
+  --xg-radius:14px;
+  --xg-shadow:0 10px 30px rgba(29,39,51,.09);
+  --xg-shadow-lg:0 18px 46px rgba(29,39,51,.16);
+  --xg-nav-h:64px;
+  --xg-notice-h:40px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--xg-ink);
+  background:var(--xg-mist);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+.xg-container{width:min(1180px,92%);margin:0 auto}
+.xg-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ===== 吸顶：公告条 + 页头 ===== */
+.xg-sticky-wrap{position:sticky;top:0;z-index:60}
+.xg-notice{
+  height:var(--xg-notice-h);
+  background:linear-gradient(90deg,#243a52,#2f4f6f 55%,#3d6b93);
+  color:#e9f1f8;font-size:13px;display:flex;align-items:center;overflow:hidden;
+}
+.xg-notice .xg-container{display:flex;align-items:center;gap:12px;min-width:0}
+.xg-notice-tag{
+  flex:0 0 auto;background:var(--xg-gold);color:#2a2213;font-weight:700;
+  font-size:11px;padding:1px 8px;border-radius:99px;letter-spacing:.5px;
+}
+.xg-notice-track{flex:1;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.xg-notice-track strong{color:#ffd88a;font-weight:600}
+.xg-notice-track span{opacity:.86}
+
+.xg-header{
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--xg-line);
+}
+.xg-header-inner{
+  height:var(--xg-nav-h);display:flex;align-items:center;gap:22px;
+}
+.xg-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.xg-logo-mark{
+  width:36px;height:36px;border-radius:10px;
+  background:linear-gradient(140deg,var(--xg-deep),var(--xg-blue));
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px;letter-spacing:.5px;
+  box-shadow:0 6px 14px rgba(47,79,111,.28);
+}
+.xg-logo-text{font-size:18px;font-weight:800;letter-spacing:.5px;white-space:nowrap}
+.xg-logo-text em{font-style:normal;color:var(--xg-gold-deep)}
+.xg-logo-sub{display:block;font-size:10px;font-weight:500;color:var(--xg-grey);letter-spacing:2px;line-height:1}
+.xg-nav{display:flex;gap:4px;flex:1;min-width:0;overflow:hidden}
+.xg-nav a{
+  font-size:14px;color:var(--xg-ink);padding:7px 11px;border-radius:8px;
+  white-space:nowrap;transition:background .2s,color .2s;
+}
+.xg-nav a:hover,.xg-nav a.is-active{background:var(--xg-sky);color:var(--xg-deep);font-weight:600}
+.xg-header-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.xg-search{position:relative;display:flex;align-items:center}
+.xg-search input{
+  width:180px;height:36px;border:1px solid var(--xg-line);border-radius:99px;
+  padding:0 38px 0 14px;font-size:13px;background:var(--xg-mist);color:var(--xg-ink);
+  transition:width .25s,border-color .2s,background .2s;outline:none;
+}
+.xg-search input:focus{width:230px;border-color:var(--xg-blue);background:#fff}
+.xg-search-btn{
+  position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+  color:var(--xg-deep);
+}
+.xg-search-btn:hover{background:var(--xg-sky)}
+.xg-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  height:38px;padding:0 18px;border-radius:99px;font-size:14px;font-weight:600;
+  transition:transform .18s,box-shadow .18s,background .18s;white-space:nowrap;
+}
+.xg-btn:hover{transform:translateY(-1px)}
+.xg-btn-primary{background:linear-gradient(135deg,var(--xg-deep),var(--xg-blue));color:#fff;box-shadow:0 8px 18px rgba(47,79,111,.26)}
+.xg-btn-gold{background:var(--xg-gold);color:#2a2213;box-shadow:0 8px 18px rgba(232,176,75,.34)}
+.xg-btn-ghost{border:1px solid var(--xg-deep);color:var(--xg-deep);background:transparent}
+.xg-btn-ghost:hover{background:var(--xg-sky)}
+.xg-btn-sm{height:32px;padding:0 14px;font-size:13px}
+.xg-menu-toggle{display:none;width:38px;height:38px;border-radius:10px;border:1px solid var(--xg-line);place-items:center;color:var(--xg-deep);background:#fff}
+.xg-search-feedback{
+  position:absolute;top:44px;left:0;right:0;background:#fff;border:1px solid var(--xg-line);
+  border-radius:12px;box-shadow:var(--xg-shadow);padding:10px 12px;font-size:12.5px;color:var(--xg-grey);
+  display:none;z-index:80;
+}
+.xg-search-feedback.is-open{display:block}
+.xg-search-feedback b{color:var(--xg-deep)}
+
+/* ===== 首屏 ===== */
+.xg-hero{
+  background:
+    radial-gradient(900px 380px at 88% -10%,rgba(232,176,75,.17),transparent 70%),
+    linear-gradient(180deg,#eaf1f7,#f2f6f9 70%);
+  padding:52px 0 40px;
+  scroll-margin-top:calc(var(--xg-nav-h) + var(--xg-notice-h) + 12px);
+}
+.xg-hero-grid{display:grid;grid-template-columns:6fr 5fr;gap:40px;align-items:center}
+.xg-hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  color:var(--xg-deep);background:#fff;border:1px solid var(--xg-line);
+  border-radius:99px;padding:4px 13px;letter-spacing:.5px;
+}
+.xg-hero-eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--xg-gold);display:inline-block}
+.xg-h1{
+  font-size:clamp(34px,4.6vw,54px);line-height:1.12;letter-spacing:2px;
+  margin:16px 0 6px;color:var(--xg-ink);
+}
+.xg-h1 em{font-style:normal;color:var(--xg-deep)}
+.xg-hero-slogan{font-size:17px;font-weight:600;color:var(--xg-deep);letter-spacing:1px;margin-bottom:14px}
+.xg-hero-intro{font-size:14.5px;color:var(--xg-grey);max-width:540px}
+.xg-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 26px}
+.xg-hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:520px}
+.xg-stat{
+  background:#fff;border:1px solid var(--xg-line);border-radius:var(--xg-radius);
+  padding:13px 14px;box-shadow:0 6px 16px rgba(29,39,51,.05);
+}
+.xg-stat-num{font-size:23px;font-weight:800;color:var(--xg-deep);line-height:1.2}
+.xg-stat-num small{font-size:12px;font-weight:600;color:var(--xg-grey);margin-left:2px}
+.xg-stat-label{font-size:12px;color:var(--xg-grey);margin-top:3px}
+.xg-hero-visual{position:relative}
+.xg-hero-frame{
+  border-radius:20px;overflow:hidden;box-shadow:var(--xg-shadow-lg);
+  border:1px solid #fff;background:#fff;
+}
+.xg-hero-frame img{width:100%;aspect-ratio:4/3.1;object-fit:cover}
+.xg-hero-badge{
+  position:absolute;left:-14px;bottom:22px;background:#fff;border-radius:14px;
+  box-shadow:var(--xg-shadow-lg);padding:11px 15px;display:flex;align-items:center;gap:10px;
+  border:1px solid var(--xg-line);
+}
+.xg-hero-badge-ico{width:34px;height:34px;border-radius:10px;background:var(--xg-sky);display:grid;place-items:center;color:var(--xg-deep)}
+.xg-hero-badge-t{font-size:13px;font-weight:700;line-height:1.3}
+.xg-hero-badge-s{font-size:11.5px;color:var(--xg-grey)}
+.xg-hero-chip{
+  position:absolute;right:16px;top:16px;background:rgba(29,39,51,.72);color:#fff;
+  font-size:11.5px;letter-spacing:.5px;padding:4px 11px;border-radius:99px;backdrop-filter:blur(4px);
+}
+
+/* ===== 通用区块 ===== */
+.xg-section{padding:56px 0;scroll-margin-top:calc(var(--xg-nav-h) + var(--xg-notice-h) + 12px)}
+.xg-section-alt{background:#fff}
+.xg-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:26px;flex-wrap:wrap}
+.xg-section-kicker{font-size:12.5px;font-weight:800;letter-spacing:2.5px;color:var(--xg-gold-deep);text-transform:uppercase}
+.xg-h2{font-size:clamp(23px,2.7vw,31px);line-height:1.3;letter-spacing:1px;margin-top:4px}
+.xg-h2 em{font-style:normal;color:var(--xg-blue)}
+.xg-section-desc{font-size:14px;color:var(--xg-grey);max-width:520px;margin-top:6px}
+.xg-link-more{font-size:13.5px;font-weight:700;color:var(--xg-deep);display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.xg-link-more:hover{color:var(--xg-gold-deep)}
+
+/* ===== 视频卡片通用 ===== */
+.xg-video-card{
+  background:#fff;border:1px solid var(--xg-line);border-radius:var(--xg-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s,border-color .22s;
+}
+.xg-video-card:hover{transform:translateY(-4px);box-shadow:var(--xg-shadow-lg);border-color:#c3d3e0}
+.xg-thumb{position:relative;overflow:hidden;background:var(--xg-sky)}
+.xg-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .4s}
+.xg-video-card:hover .xg-thumb img{transform:scale(1.04)}
+.xg-thumb-tag{
+  position:absolute;left:10px;top:10px;background:rgba(29,39,51,.66);color:#fff;
+  font-size:11px;padding:2px 9px;border-radius:99px;backdrop-filter:blur(4px);letter-spacing:.4px;
+}
+.xg-thumb-time{
+  position:absolute;right:10px;bottom:10px;background:rgba(29,39,51,.72);color:#fff;
+  font-size:11px;padding:1px 7px;border-radius:5px;font-variant-numeric:tabular-nums;
+}
+.xg-play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.xg-play span{
+  width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.86);
+  display:grid;place-items:center;color:var(--xg-deep);box-shadow:0 6px 18px rgba(0,0,0,.2);
+  transition:transform .22s,background .22s;
+}
+.xg-video-card:hover .xg-play span{transform:scale(1.12);background:#fff}
+.xg-thumb-mask{position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,30,40,.35))}
+.xg-video-body{padding:13px 15px 15px;display:flex;flex-direction:column;gap:7px;flex:1}
+.xg-video-title{font-size:15px;font-weight:700;line-height:1.5}
+.xg-video-desc{font-size:12.5px;color:var(--xg-grey);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.xg-tags{display:flex;flex-wrap:wrap;gap:6px}
+.xg-tag{font-size:11px;color:var(--xg-deep);background:var(--xg-sky);border-radius:5px;padding:1px 7px}
+.xg-video-foot{
+  margin-top:auto;padding-top:9px;border-top:1px dashed var(--xg-line);
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+}
+.xg-author-mini{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--xg-grey);min-width:0}
+.xg-avatar{
+  width:26px;height:26px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+  font-size:11.5px;font-weight:800;color:#fff;background:var(--xg-deep);overflow:hidden;
+}
+.xg-avatar.lg{width:52px;height:52px;font-size:17px;border-radius:16px}
+.xg-avatar.sm{width:22px;height:22px;font-size:10px}
+.xg-actions{display:flex;align-items:center;gap:4px;flex:0 0 auto}
+.xg-act{
+  display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--xg-grey);
+  padding:3px 6px;border-radius:7px;transition:background .18s,color .18s;font-variant-numeric:tabular-nums;
+}
+.xg-act:hover{background:var(--xg-mist);color:var(--xg-deep)}
+.xg-act.is-on{color:var(--xg-gold-deep);font-weight:700}
+.xg-act svg{width:15px;height:15px;flex:0 0 auto}
+
+/* 焦点视频 */
+.xg-feature-grid{display:grid;grid-template-columns:7fr 5fr;gap:22px}
+.xg-feature-main{border-radius:18px;overflow:hidden;position:relative;box-shadow:var(--xg-shadow);background:#fff;border:1px solid var(--xg-line)}
+.xg-feature-main .xg-thumb img{aspect-ratio:16/8.6}
+.xg-feature-main-caption{
+  position:absolute;inset:auto 0 0 0;padding:26px 22px 20px;color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(17,26,36,.86) 62%);
+}
+.xg-feature-main-caption h3{font-size:21px;line-height:1.4;margin-bottom:6px}
+.xg-feature-main-caption p{font-size:13px;opacity:.86;max-width:92%}
+.xg-feature-main-caption .xg-tags{margin-top:10px}
+.xg-feature-main-caption .xg-tag{background:rgba(255,255,255,.2);color:#fff}
+.xg-feature-side{display:grid;grid-template-rows:repeat(2,1fr);gap:18px}
+.xg-feature-side .xg-video-title{font-size:14px}
+
+/* 热门视频流 */
+.xg-stream{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.xg-stream .xg-video-card:nth-child(1) .xg-thumb img{aspect-ratio:16/9}
+.xg-stream .xg-video-card:nth-child(4) .xg-thumb img{aspect-ratio:16/9}
+
+/* 专题 */
+.xg-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.xg-topic-card{
+  border-radius:16px;overflow:hidden;position:relative;min-height:230px;display:flex;
+  align-items:flex-end;border:1px solid var(--xg-line);background:#fff;box-shadow:0 8px 20px rgba(29,39,51,.06);
+  transition:transform .22s,box-shadow .22s;
+}
+.xg-topic-card:hover{transform:translateY(-4px);box-shadow:var(--xg-shadow-lg)}
+.xg-topic-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.xg-topic-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,26,36,.06),rgba(17,26,36,.82))}
+.xg-topic-body{position:relative;z-index:2;padding:16px;color:#fff}
+.xg-topic-state{
+  display:inline-block;font-size:11px;background:var(--xg-gold);color:#2a2213;font-weight:700;
+  padding:1px 9px;border-radius:99px;margin-bottom:8px;
+}
+.xg-topic-body h3{font-size:16px;line-height:1.4;margin-bottom:4px}
+.xg-topic-body p{font-size:12px;opacity:.85;line-height:1.55}
+
+/* 创作者矩阵 */
+.xg-creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.xg-creator-card{
+  background:#fff;border:1px solid var(--xg-line);border-radius:var(--xg-radius);
+  padding:18px;display:flex;flex-direction:column;gap:10px;transition:box-shadow .22s,transform .22s;
+}
+.xg-creator-card:hover{box-shadow:var(--xg-shadow);transform:translateY(-3px)}
+.xg-creator-top{display:flex;align-items:center;gap:12px}
+.xg-creator-name{font-size:15px;font-weight:700;line-height:1.3}
+.xg-creator-field{font-size:12px;color:var(--xg-gold-deep);font-weight:600}
+.xg-creator-bio{font-size:12.5px;color:var(--xg-grey);line-height:1.65}
+.xg-creator-meta{display:flex;gap:16px;font-size:12px;color:var(--xg-grey);padding-top:8px;border-top:1px dashed var(--xg-line)}
+.xg-creator-meta b{color:var(--xg-deep);font-weight:800;font-size:13px}
+.xg-creator-card .xg-btn{align-self:flex-start}
+
+/* 影像墙 */
+.xg-wall{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.xg-wall-item{position:relative;border-radius:12px;overflow:hidden;background:var(--xg-sky);box-shadow:0 6px 16px rgba(29,39,51,.07)}
+.xg-wall-item img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1}
+.xg-wall-item.w-lg{grid-column:span 6}
+.xg-wall-item.w-lg img{aspect-ratio:16/9}
+.xg-wall-item.w-md{grid-column:span 3}
+.xg-wall-item.w-sm{grid-column:span 2}
+.xg-wall-cap{
+  position:absolute;inset:auto 0 0 0;padding:20px 12px 10px;font-size:12px;color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(17,26,36,.8));font-weight:600;
+}
+
+/* 随笔 */
+.xg-essay-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.xg-essay{
+  background:#fff;border:1px solid var(--xg-line);border-left:4px solid var(--xg-gold);
+  border-radius:12px;padding:20px 22px;box-shadow:0 6px 16px rgba(29,39,51,.05);
+}
+.xg-essay h3{font-size:16.5px;margin-bottom:8px;line-height:1.45}
+.xg-essay p{font-size:13.5px;color:var(--xg-grey);line-height:1.8}
+.xg-essay time{display:block;font-size:12px;color:var(--xg-blue);font-weight:600;margin-top:12px;letter-spacing:.4px}
+
+/* 评价 */
+.xg-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.xg-review{
+  background:#fff;border:1px solid var(--xg-line);border-radius:14px;padding:16px 17px;
+  display:flex;flex-direction:column;gap:10px;font-size:13px;color:var(--xg-ink);
+}
+.xg-review p{line-height:1.75;color:var(--xg-grey)}
+.xg-review-top{display:flex;align-items:center;gap:9px}
+.xg-review-name{font-size:13px;font-weight:700}
+.xg-review-tag{font-size:11px;color:var(--xg-blue);background:var(--xg-sky);padding:0 7px;border-radius:5px;margin-left:auto}
+.xg-stars{color:var(--xg-gold-deep);font-size:12px;letter-spacing:2px}
+
+/* 榜单 */
+.xg-rank-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.xg-rank-col{background:#fff;border:1px solid var(--xg-line);border-radius:14px;padding:16px 17px}
+.xg-rank-col h3{font-size:14.5px;margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.xg-rank-col h3:before{content:"";width:4px;height:15px;border-radius:2px;background:var(--xg-gold)}
+.xg-rank-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.xg-rank-list li{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--xg-ink)}
+.xg-rank-no{
+  width:19px;height:19px;border-radius:6px;display:grid;place-items:center;flex:0 0 auto;
+  font-size:11px;font-weight:800;background:var(--xg-mist);color:var(--xg-grey);
+}
+.xg-rank-list li:nth-child(1) .xg-rank-no{background:var(--xg-gold);color:#2a2213}
+.xg-rank-list li:nth-child(2) .xg-rank-no{background:#cfd9e3;color:#31414f}
+.xg-rank-list li:nth-child(3) .xg-rank-no{background:#e8d5b3;color:#5b4520}
+.xg-rank-list li span:last-child{margin-left:auto;color:var(--xg-grey);font-size:11.5px;font-variant-numeric:tabular-nums}
+
+/* 动态 */
+.xg-news-list{display:flex;flex-direction:column;gap:2px;background:#fff;border:1px solid var(--xg-line);border-radius:14px;overflow:hidden}
+.xg-news-item{
+  display:grid;grid-template-columns:96px 1fr auto;gap:14px;align-items:center;
+  padding:14px 18px;border-bottom:1px solid var(--xg-line);transition:background .18s;
+}
+.xg-news-item:last-child{border-bottom:none}
+.xg-news-item:hover{background:var(--xg-mist)}
+.xg-news-date{font-size:12px;font-weight:700;color:var(--xg-blue);font-variant-numeric:tabular-nums}
+.xg-news-title{font-size:13.5px;line-height:1.5}
+.xg-news-kind{font-size:11px;color:var(--xg-deep);background:var(--xg-sky);padding:1px 9px;border-radius:99px;white-space:nowrap}
+
+/* 品牌解析长文 */
+.xg-deep{padding:56px 0;background:linear-gradient(180deg,#eef3f8,#f2f6f9);scroll-margin-top:calc(var(--xg-nav-h) + var(--xg-notice-h) + 12px)}
+.xg-deep-box{
+  background:#fff;border:1px solid var(--xg-line);border-radius:20px;padding:38px 42px;
+  box-shadow:var(--xg-shadow);max-width:1040px;margin:0 auto;
+}
+.xg-deep-box h2{font-size:26px;letter-spacing:1px;margin-bottom:6px}
+.xg-deep-box .xg-deep-sub{font-size:13.5px;color:var(--xg-gold-deep);font-weight:700;letter-spacing:1px;margin-bottom:18px}
+.xg-deep-box h3{font-size:16.5px;margin:22px 0 8px;color:var(--xg-deep);display:flex;align-items:center;gap:8px}
+.xg-deep-box h3:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--xg-gold);flex:0 0 auto}
+.xg-deep-box p{font-size:14px;color:#425160;line-height:1.95;text-indent:2em;margin-bottom:8px}
+.xg-deep-box p.no-indent{text-indent:0}
+
+/* FAQ */
+.xg-faq{display:flex;flex-direction:column;gap:10px;max-width:900px;margin:0 auto}
+.xg-faq details{
+  background:#fff;border:1px solid var(--xg-line);border-radius:12px;padding:0 18px;
+  transition:border-color .2s,box-shadow .2s;
+}
+.xg-faq details[open]{border-color:#b9cbda;box-shadow:0 8px 20px rgba(29,39,51,.07)}
+.xg-faq summary{
+  list-style:none;cursor:pointer;font-size:14.5px;font-weight:700;padding:14px 0;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.xg-faq summary::-webkit-details-marker{display:none}
+.xg-faq summary:after{content:"+";font-size:18px;color:var(--xg-blue);font-weight:400;transition:transform .2s}
+.xg-faq details[open] summary:after{content:"–"}
+.xg-faq details p{font-size:13.5px;color:var(--xg-grey);padding:0 0 15px;line-height:1.85}
+
+/* 合作伙伴 */
+.xg-partner{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.xg-partner-item{
+  background:#fff;border:1px solid var(--xg-line);border-radius:12px;padding:16px 12px;
+  display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;
+  font-size:12.5px;color:var(--xg-grey);transition:border-color .2s,color .2s;
+}
+.xg-partner-item:hover{border-color:var(--xg-blue);color:var(--xg-deep)}
+.xg-partner-ico{width:34px;height:34px;border-radius:10px;background:var(--xg-sky);display:grid;place-items:center;color:var(--xg-deep);font-weight:800;font-size:13px}
+
+/* 联系 */
+.xg-contact-grid{display:grid;grid-template-columns:5fr 4fr;gap:26px;align-items:start}
+.xg-contact-card{background:linear-gradient(140deg,#2f4f6f,#3d6b93);color:#eaf1f8;border-radius:18px;padding:28px 28px 24px;box-shadow:var(--xg-shadow-lg)}
+.xg-contact-card h3{font-size:19px;margin-bottom:8px}
+.xg-contact-card p{font-size:13px;opacity:.86;line-height:1.8}
+.xg-contact-list{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:11px;font-size:13.5px}
+.xg-contact-list li{display:flex;align-items:center;gap:9px}
+.xg-contact-list b{color:#ffd88a;font-weight:700}
+.xg-contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.xg-contact-note{background:#fff;border:1px solid var(--xg-line);border-radius:16px;padding:22px 24px}
+.xg-contact-note h3{font-size:16px;margin-bottom:10px}
+.xg-contact-note p{font-size:13px;color:var(--xg-grey);line-height:1.85}
+.xg-contact-note ul{margin:10px 0 0 18px;font-size:13px;color:var(--xg-grey);line-height:1.9}
+
+/* 页脚 */
+.xg-footer{background:#1d2733;color:#c9d6e2;padding:44px 0 26px;font-size:13px}
+.xg-footer-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1.3fr;gap:26px}
+.xg-footer h4{font-size:13.5px;color:#fff;margin-bottom:12px;letter-spacing:.5px}
+.xg-footer ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:12.5px;color:#93a7b8}
+.xg-footer a:hover{color:var(--xg-gold)}
+.xg-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.xg-footer-brand .xg-logo-mark{background:linear-gradient(140deg,#3d6b93,#e8b04b)}
+.xg-footer-brand strong{font-size:16px;color:#fff}
+.xg-footer-brand span{font-size:10px;color:#93a7b8;letter-spacing:2px;display:block;line-height:1}
+.xg-footer-desc{font-size:12.5px;color:#93a7b8;line-height:1.85;max-width:300px}
+.xg-footer-bottom{
+  margin-top:30px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between;
+  font-size:12px;color:#7f93a5;
+}
+
+/* Toast */
+.xg-toast{
+  position:fixed;left:50%;bottom:32px;transform:translate(-50%,18px);z-index:200;
+  background:rgba(29,39,51,.94);color:#fff;font-size:13px;padding:10px 20px;border-radius:99px;
+  box-shadow:0 12px 30px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;
+  max-width:86vw;text-align:center;
+}
+.xg-toast.is-show{opacity:1;transform:translate(-50%,0)}
+
+/* 弹窗 */
+.xg-modal-mask{
+  position:fixed;inset:0;background:rgba(17,26,36,.5);z-index:150;display:none;
+  align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px);
+}
+.xg-modal-mask.is-open{display:flex}
+.xg-modal{
+  background:#fff;border-radius:18px;width:min(440px,100%);padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.28);
+  animation:xgPop .2s ease-out;
+}
+@keyframes xgPop{from{transform:translateY(10px) scale(.97);opacity:.6}to{transform:none;opacity:1}}
+.xg-modal h3{font-size:18px;margin-bottom:6px}
+.xg-modal p{font-size:13px;color:var(--xg-grey);line-height:1.8}
+.xg-modal-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin:15px 0}
+.xg-modal-list li{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--xg-ink)}
+.xg-modal-list .xg-avatar{width:30px;height:30px;font-size:12px;border-radius:9px}
+.xg-modal-actions{display:flex;gap:10px;margin-top:16px;justify-content:flex-end;flex-wrap:wrap}
+
+/* 回到顶部 */
+.xg-top-btn{
+  position:fixed;right:22px;bottom:26px;z-index:90;width:44px;height:44px;border-radius:50%;
+  background:#fff;border:1px solid var(--xg-line);box-shadow:var(--xg-shadow);color:var(--xg-deep);
+  display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;
+}
+.xg-top-btn.is-show{opacity:1;pointer-events:auto}
+.xg-top-btn:hover{transform:translateY(-3px)}
+
+/* 响应式 */
+@media (max-width:1024px){
+  .xg-hero-grid{grid-template-columns:1fr;gap:28px}
+  .xg-hero-visual{order:-1}
+  .xg-feature-grid{grid-template-columns:1fr}
+  .xg-feature-side{grid-template-columns:1fr 1fr;grid-template-rows:none}
+  .xg-topic-grid{grid-template-columns:repeat(2,1fr)}
+  .xg-stream{grid-template-columns:repeat(2,1fr)}
+  .xg-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .xg-review-grid{grid-template-columns:repeat(2,1fr)}
+  .xg-rank-grid{grid-template-columns:1fr}
+  .xg-footer-grid{grid-template-columns:1fr 1fr}
+  .xg-partner{grid-template-columns:repeat(3,1fr)}
+  .xg-contact-grid{grid-template-columns:1fr}
+  .xg-deep-box{padding:28px 24px}
+}
+@media (max-width:820px){
+  .xg-nav{
+    position:absolute;left:0;right:0;top:calc(var(--xg-nav-h) + var(--xg-notice-h));
+    background:#fff;border-bottom:1px solid var(--xg-line);flex-direction:column;
+    padding:10px 4%;gap:2px;display:none;box-shadow:0 16px 30px rgba(29,39,51,.12);
+  }
+  .xg-nav.is-open{display:flex}
+  .xg-nav a{padding:11px 12px;border-radius:10px;font-size:15px}
+  .xg-menu-toggle{display:grid}
+  .xg-search input{width:120px}
+  .xg-search input:focus{width:150px}
+  .xg-header-inner{gap:12px}
+  .xg-header-tools .xg-btn-primary{display:none}
+}
+@media (max-width:680px){
+  .xg-hero{padding:32px 0 26px}
+  .xg-hero-stats{grid-template-columns:1fr 1fr}
+  .xg-stream{grid-template-columns:1fr}
+  .xg-topic-grid{grid-template-columns:1fr}
+  .xg-creator-grid{grid-template-columns:1fr}
+  .xg-review-grid{grid-template-columns:1fr}
+  .xg-essay-grid{grid-template-columns:1fr}
+  .xg-feature-side{grid-template-columns:1fr}
+  .xg-wall-item.w-lg,.xg-wall-item.w-md,.xg-wall-item.w-sm{grid-column:span 6}
+  .xg-wall-item img{aspect-ratio:16/10}
+  .xg-partner{grid-template-columns:repeat(2,1fr)}
+  .xg-news-item{grid-template-columns:1fr auto;gap:4px 10px}
+  .xg-news-date{grid-column:1/-1}
+  .xg-footer-grid{grid-template-columns:1fr}
+  .xg-search{display:none}
+  .xg-section{padding:40px 0}
+  .xg-deep{padding:40px 0}
+  .xg-deep-box{padding:22px 18px;border-radius:16px}
+  .xg-deep-box p{text-indent:0}
+  .xg-h1{letter-spacing:1px}
+  .xg-top-btn{right:14px;bottom:18px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶区域：公告条 + 页头 -->
+<div class="xg-sticky-wrap">
+  <div class="xg-notice" role="region" aria-label="官方公告">
+    <div class="xg-container">
+      <span class="xg-notice-tag">官方发布</span>
+      <div class="xg-notice-track">
+        <strong>11月19日更新</strong>
+        <span>｜「身体叙事·第一季」专题上线，6位创作者记录真实身体故事；「光影练习」影像征集报名通道已开启，投稿截止12月20日。</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="xg-header">
+    <div class="xg-container xg-header-inner">
+      <a class="xg-logo" href="#xg-home" aria-label="西西gogo人体官网首页">
+        <span class="xg-logo-mark">西西</span>
+        <span>
+          <span class="xg-logo-text">西西gogo<em>人体</em></span>
+          <span class="xg-logo-sub">XIXI GOGO BODY</span>
+        </span>
+      </a>
+
+      <nav class="xg-nav" id="xgNav" aria-label="主导航">
+        <a href="#xg-home" class="is-active">首页</a>
+        <a href="#xg-featured">焦点影像</a>
+        <a href="#xg-topics">专题企划</a>
+        <a href="#xg-creators">创作者</a>
+        <a href="#xg-wall">影像墙</a>
+        <a href="#xg-brand">品牌故事</a>
+        <a href="#xg-news">企业动态</a>
+        <a href="#xg-help">帮助中心</a>
+      </nav>
+
+      <div class="xg-header-tools">
+        <div class="xg-search">
+          <label class="xg-sr-only" for="xgSearchInput">搜索站内内容</label>
+          <input id="xgSearchInput" type="search" placeholder="搜索影像 / 创作者" autocomplete="off">
+          <button class="xg-search-btn" id="xgSearchBtn" type="button" aria-label="搜索">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+          </button>
+          <div class="xg-search-feedback" id="xgSearchFeedback" role="status" aria-live="polite"></div>
+        </div>
+        <button class="xg-btn xg-btn-primary xg-btn-sm" type="button" data-xg-modal="submit">投稿入口</button>
+        <button class="xg-menu-toggle" id="xgMenuToggle" type="button" aria-label="展开菜单" aria-expanded="false" aria-controls="xgNav">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="xg-hero" id="xg-home">
+    <div class="xg-container xg-hero-grid">
+      <div>
+        <span class="xg-hero-eyebrow"><i></i>西西gogo人体 · 官方网站</span>
+        <h1 class="xg-h1">西西gogo<em>人体</em></h1>
+        <p class="xg-hero-slogan">以影像记录身体的真实、成长与力量</p>
+        <p class="xg-hero-intro">
+          作为专注身体美学的视频品牌与原创内容平台，西西gogo人体官方网站长期深耕身体影像这一垂直领域，
+          以专业拍摄、真实叙事与开放社区，连接创作者与同好。我们相信每一种身体都有值得被记录的故事，
+          平台持续运营高品质影像内容生态，用镜头讲述关于自我接纳、健康运动、生活方式与艺术表达的多元故事，
+          为创作者提供值得信赖的展示空间，为用户提供有品质、有温度、有口碑的影像体验。
+        </p>
+        <div class="xg-hero-actions">
+          <a class="xg-btn xg-btn-primary" href="#xg-featured">浏览焦点影像</a>
+          <a class="xg-btn xg-btn-ghost" href="#xg-brand">了解品牌故事</a>
+          <button class="xg-btn xg-btn-gold" type="button" data-xg-modal="submit">参与投稿征集</button>
+        </div>
+        <div class="xg-hero-stats">
+          <div class="xg-stat">
+            <div class="xg-stat-num" data-xg-count="1860">0<small>+</small></div>
+            <div class="xg-stat-label">原创影像作品</div>
+          </div>
+          <div class="xg-stat">
+            <div class="xg-stat-num" data-xg-count="326">0<small>位</small></div>
+            <div class="xg-stat-label">认证创作者</div>
+          </div>
+          <div class="xg-stat">
+            <div class="xg-stat-num" data-xg-count="248">0<small>万</small></div>
+            <div class="xg-stat-label">社区同好关注</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="xg-hero-visual">
+        <div class="xg-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 500'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232f4f6f'/%3E%3Cstop offset='1' stop-color='%236f97b8'/%3E%3C/linearGradient%3E%3ClinearGradient id='warm' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7d9a0'/%3E%3Cstop offset='1' stop-color='%23e8b04b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='500' fill='url(%23bg)'/%3E%3Ccircle cx='500' cy='120' r='86' fill='url(%23warm)' opacity='.9'/%3E%3Ccircle cx='150' cy='380' r='120' fill='%23ffffff' opacity='.07'/%3E%3Cpath d='M0 400 Q160 320 320 390 T640 350 L640 500 L0 500Z' fill='%23eaf1f7' opacity='.18'/%3E%3Cg fill='none' stroke='%23eaf1f7' stroke-width='2' opacity='.55'%3E%3Ccircle cx='320' cy='250' r='120'/%3E%3Ccircle cx='320' cy='250' r='88'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='320' cy='196' r='34' fill='%23f7d9a0'/%3E%3Cpath d='M258 330c0-38 27-64 62-64s62 26 62 64z' fill='%23f7d9a0'/%3E%3C/g%3E%3Cg stroke='%23ffd88a' stroke-width='3' stroke-linecap='round' opacity='.8'%3E%3Cpath d='M90 90l40 26M130 90l-40 26'/%3E%3C/g%3E%3Ctext x='40' y='60' fill='%23eaf1f7' font-size='22' font-family='sans-serif' font-weight='bold' letter-spacing='4'%3EBODY%3C/text%3E%3Ctext x='40' y='86' fill='%23ffd88a' font-size='13' font-family='sans-serif' letter-spacing='2'%3EIMAGE JOURNAL%3C/text%3E%3C/svg%3E" alt="西西gogo人体品牌主视觉：蓝色光影中的人形轮廓与金色日轮">
+        </div>
+        <span class="xg-hero-chip">品牌主视觉 · 身体叙事</span>
+        <div class="xg-hero-badge">
+          <span class="xg-hero-badge-ico">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          <span>
+            <span class="xg-hero-badge-t">本周焦点影像</span>
+            <span class="xg-hero-badge-s">《与身体和解的十二个瞬间》</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点影像 -->
+  <section class="xg-section xg-section-alt" id="xg-featured">
+    <div class="xg-container">
+      <div class="xg-section-head">
+        <div>
+          <div class="xg-section-kicker">Featured</div>
+          <h2 class="xg-h2">焦点<em>影像</em>与本周推荐</h2>
+          <p class="xg-section-desc">由品牌编辑部与专业创作者共同遴选，呈现身体美学与真实生活的精品内容，每周更新。</p>
+        </div>
+        <a class="xg-link-more" href="#xg-stream">查看全部影像 →</a>
+      </div>
+
+      <div class="xg-feature-grid">
+        <article class="xg-feature-main">
+          <div class="xg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 388'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e8f0f7'/%3E%3Cstop offset='1' stop-color='%23a9c6dd'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='388' fill='url(%23a)'/%3E%3Ccircle cx='560' cy='110' r='90' fill='%23e8b04b' opacity='.5'/%3E%3Cpath d='M0 300 Q180 220 360 290 T720 260 L720 388 L0 388Z' fill='%232f4f6f' opacity='.2'/%3E%3Cg stroke='%232f4f6f' stroke-width='2.5' fill='none' opacity='.7'%3E%3Cpath d='M140 250c20-52 44-78 90-78s70 26 90 78'/%3E%3Cpath d='M420 250c16-44 38-64 74-64s58 20 74 64'/%3E%3C/g%3E%3Cg fill='%232f4f6f' opacity='.85'%3E%3Ccircle cx='230' cy='140' r='22'/%3E%3Ccircle cx='494' cy='158' r='18'/%3E%3C/g%3E%3Crect x='40' y='40' width='132' height='30' rx='15' fill='%23ffffff' opacity='.8'/%3E%3Ctext x='62' y='60' font-size='13' fill='%232f4f6f' font-family='sans-serif' font-weight='bold'%3E身体叙事%3C/text%3E%3C/svg%3E" alt="焦点影像《与身体和解的十二个瞬间》封面，蓝色调人形剪影与金色光点">
+            <div class="xg-thumb-mask"></div>
+            <span class="xg-thumb-tag">专题首映</span>
+            <span class="xg-thumb-time">18:42</span>
+            <div class="xg-play"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+            <div class="xg-feature-main-caption">
+              <h3>与身体和解的十二个瞬间</h3>
+              <p>从镜子前的犹豫到镜头前的坦然，十二位普通人用一年时间记录身体与自我关系的缓慢改变。</p>
+              <div class="xg-tags">
+                <span class="xg-tag">人物访谈</span>
+                <span class="xg-tag">真实记录</span>
+                <span class="xg-tag">品牌原创</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="xg-feature-side">
+          <article class="xg-video-card">
+            <div class="xg-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 180'%3E%3Crect width='360' height='180' fill='%23f6e7cc'/%3E%3Cg fill='%23c78e2c'%3E%3Ccircle cx='90' cy='92' r='26' opacity='.85'/%3E%3Ccircle cx='180' cy='70' r='40' opacity='.5'/%3E%3Ccircle cx='272' cy='102' r='22' opacity='.75'/%3E%3C/g%3E%3Cpath d='M0 150 L120 110 L240 148 L360 118 L360 180 L0 180Z' fill='%232f4f6f' opacity='.35'/%3E%3Ctext x='20' y='34' font-size='12' fill='%232f4f6f' font-family='sans-serif' font-weight='bold'%3E光影练习%3C/text%3E%3C/svg%3E" alt="《光影练习：一束光如何描绘身体轮廓》封面，米金色圆形光斑构成的身体轮廓">
+              <span class="xg-thumb-tag">光影练习</span>
+              <span class="xg-thumb-time">09:18</span>
+              <div class="xg-play"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+            </div>
+            <div class="xg-video-body">
+              <h3 class="xg-video-title">光影练习：一束光如何描绘身体轮廓</h3>
+              <p class="xg-video-desc">摄影师阿澈的布光课堂，从侧逆光到自然窗光，三组实用方案在家就能完成。</p>
+              <div class="xg-video-foot">
+                <span class="xg-author-mini"><span class="xg-avatar sm" style="background:#3d6b93">澈</span>阿澈 · 光影笔记</span>
+                <span class="xg-actions">
+                  <button class="xg-act" type="button" data-xg-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3zm0 0l4.2-7.6a2 2 0 013.6 1.7L14 9h4.6a2 2 0 012 2.4l-1.2 6.2a2 2 0 01-2 1.4H7"/></svg><b>328</b></button>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="xg-video-card">
+            <div class="xg-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 180'%3E%3Crect width='360' height='180' fill='%23dfe9f2'/%3E%3Cg stroke='%233d6b93' stroke-width='3' fill='none' opacity='.8'%3E%3Cpath d='M30 130 C70 70 120 150 170 90 S270 130 330 60'/%3E%3C/g%3E%3Cg fill='%232f4f6f'%3E%3Ccircle cx='64' cy='140' r='9'/%3E%3Ccircle cx='132' cy='132' r='7' opacity='.7'/%3E%3Ccircle cx='214' cy='118' r='11' opacity='.8'/%3E%3Ccircle cx='300' cy='146' r='6' opacity='.6'/%3E%3C/g%3E%3Ctext x='20' y='34' font-size='12' fill='%232f4f6f' font-family='sans-serif' font-weight='bold'%3E身体训练%3C/text%3E%3C/svg%3E" alt="《每周三次，重新认识自己的身体》封面，蓝色曲线与人物节点构成的训练节奏图">
+              <span class="xg-thumb-tag">健康运动</span>
+              <span class="xg-thumb-time">12:05</span>
+              <div class="xg-play"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+            </div>
+            <div class="xg-video-body">
+              <h3 class="xg-video-title">每周三次，重新认识自己的身体</h3>
+              <p class="xg-video-desc">康复师林野带来的低强度训练指南，适合久坐人群与初学者循序推进。</p>
+              <div class="xg-video-foot">
+                <span class="xg-author-mini"><span class="xg-avatar sm" style="background:#c78e2c">野</span>林野 · 身体训练室</span>
+                <span class="xg-actions">
+                  <button class="xg-act" type="button" data-xg-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3zm0 0l4.2-7.6a2 2 0 013.6 1.7L14 9h4.6a2 2 0 012 2.4l-1.2 6.2a2 2 0 01-2 1.4H7"/></svg><b>512</b></button>
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="xg-section" id="xg-stream">
+    <div class="xg-container">
+      <div class="xg-section-head">
+        <div>
+          <div class="xg-section-kicker">Community Stream</div>
+          <h2 class="xg-h2">社区热门<em>影像流</em></h2>
+          <p class="xg-section-desc">来自西西gogo人体社区创作者的持续更新，涵盖日常记录、教程干货与深度访谈。</p>
+        </div>
+        <a class="xg-link-more" href="#xg-wall">进入影像墙 →</a>
+      </div>
+
+      <div class="xg-stream">
+        <article class="xg-video-card">
+          <div class="xg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Crect width='360' height='202' fill='%232f4f6f'/%3E%3Ccircle cx='290' cy='60' r='52' fill='%23e8b04b' opacity='.85'/%3E%3Cpath d='M0 170 Q90 120 180 168 T360 150 L360 202 L0 202Z' fill='%23dfe9f2' opacity='.25'/%3E%3Cg fill='%23eaf1f7' opacity='.9'%3E%3Ccircle cx='96' cy='84' r='20'/%3E%3Cpath d='M60 166c0-24 16-40 36-40s36 16 36 40z'/%3E%3C/g%3E%3Ctext x='18' y='32' font-size='12' fill='%23ffd88a' font-family='sans-serif' font-weight='bold'%3E日常记录%3C/text%3E%3C/svg%3E" alt="《三十岁，我第一次认真看镜子里的自己》封面，深蓝背景中的女性剪影与金色圆月">
+            <div class="xg-thumb-mask"></div>
+            <span class="xg-thumb-tag">日常记录</span>
+            <span class="xg-thumb-time">10:26</span>
+            <div class="xg-play"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+          </div>
+          <div class="xg-video-body">
+            <h3 class="xg-video-title">三十岁，我第一次认真看镜子里的自己</h3>
+            <p class="xg-video-desc">一段关于自我凝视的影像日记，从回避镜头到愿意被拍下，用了整整三百天。</p>
+            <div class="xg-tags"><span class="xg-tag">成长</span><span class="xg-tag">自我接纳</span></div>
+            <div class="xg-video-foot">
+              <span class="xg-author-mini"><span class="xg-avatar sm" style="background:#3d6b93">南</span>南栀</span>
+              <span class="xg-actions">
+                <button class="xg-act" type="button" data-xg-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3zm0 0l4.2-7.6a2 2 0 013.6 1.7L14 9h4.6a2 2 0 012 2.4l-1.2 6.2a2 2 0 01-2 1.4H7"/></svg><b>1264</b></button>
+                <button class="xg-act" type="button" data-xg-fav aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 16.8 6.9 19.4l1.1-5.6L4 9.9l5.6-.7z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="xg-video-card">
+          <div class="xg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Crect width='360' height='202' fill='%23f6e7cc'/%3E%3Cg fill='none' stroke='%23c78e2c' stroke-width='3'%3E%3Crect x='60' y='56' width='120' height='90' rx='10'/%3E%3Crect x='190' y='80' width='110' height='66' rx='8'/%3E%3C/g%3E%3Ccircle cx='120' cy='100' r='18' fill='%23c78e2c' opacity='.7'/%3E%3Ctext x='18' y='32' font-size='12' fill='%232f4f6f' font-family='sans-serif' font-weight='bold'%3E教程干货%3C/text%3E%3C/svg%3E" alt="《手机也能拍的身体肖像：七个构图思路》封面，米色背景上的相机与构图框线">
+            <div class="xg-thumb-mask"></div>
+            <span class="xg-thumb-tag">教程干货</span>
+            <span class="xg-thumb-time">14:33</span>
+            <div class="xg-play"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+          </div>
+          <div class="xg-video-body">
+            <h3 class="xg-video-title">手机也能拍的身体肖像：七个构图思路</h3>
+            <p class="xg-video-desc">不依赖专业设备，从留白、剪影到对角线，七个在家可复用的实操构图方法。</p>
+            <div class="xg-tags"><span class="xg-tag">实用技巧</span><span class="xg-tag">摄影</span></div>
+            <div class="xg-video-foot">
+              <span class="xg-author-mini"><span class="xg-avatar sm" style="background:#c78e2c">澈</span>阿澈 · 光影笔记</span>
+              <span class="xg-actions">
+                <button class="xg-act" type="button" data-xg-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3zm0 0l4.2-7.6a2 2 0 013.6 1.7L14 9h4.6a2 2 0 012 2.4l-1.2 6.2a2 2 0 01-2 1.4H7"/></svg><b>897</b></button>
+                <button class="xg-act" type="button" data-xg-fav aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 16.8 6.9 19.4l1.1-5.6L4 9.9l5.6-.7z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="xg-video-card">
+          <div class="xg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Crect width='360' height='202' fill='%23dfe9f2'/%3E%3Cg fill='%232f4f6f' opacity='.8'%3E%3Cpath d='M80 168c0-34 22-58 54-58s54 24 54 58z'/%3E%3Cpath d='M210 168c0-26 18-44 42-44s42 18 42 44z' opacity='.6'/%3E%3C/g%3E%3Cg fill='%23e8b04b'%3E%3Ccircle cx='134' cy='82' r='22'/%3E%3Ccircle cx='252' cy='102' r='16' opacity='.8'/%3E%3C/g%3E%3Ctext x='18' y='32' font-size='12' fill='%232f4f6f' font-family='sans-serif' font-weight='bold'%3E人物访谈%3C/text%3E%3C/svg%3E" alt="《舞者小满：身体是最诚实的朋友》封面，蓝色背景中两位舞者的动态剪影">
+            <div class="xg-thumb-mask"></div>
+            <span class="xg-thumb-tag">人物访谈</span>
+            <span class="xg-thumb-time">22:10</span>
+            <div class="xg-play"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+          </div>
+          <div class="xg-video-body">
+            <h3 class="xg-video-title">舞者小满：身体是最诚实的朋友</h3>
+            <p class="xg-video-desc">十年职业舞者的身体自述，谈伤病、谈信任，也谈如何在舞台上重新出发。</p>
+            <div class="xg-tags"><span class="xg-tag">深度访谈</span><span class="xg-tag">艺术表达</span></div>
+            <div class="xg-video-foot">
+              <span class="xg-author-mini"><span class="xg-avatar sm" style="background:#2f4f6f">周</span>周叙 · 访谈间</span>
+              <span class="xg-actions">
+                <button class="xg-act" type="button" data-xg-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3zm0 0l4.2-7.6a2 2 0 013.6 1.7L14 9h4.6a2 2 0 012 2.4l-1.2 6.2a2 2 0 01-2 1.4H7"/></svg><b>642</b></button>
+                <button class="xg-act" type="button" data-xg-fav aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 16.8 6.9 19.4l1.1-5.6L4 9.9l5.6-.7z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="xg-video-card">
+          <div class="xg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Crect width='360' height='202' fill='%23eaf1f7'/%3E%3Cg fill='none' stroke='%233d6b93' stroke-width='2.5'%3E%3Cpath d='M50 150 L110 96 L170 128 L230 70 L310 104'/%3E%3C/g%3E%3Cg fill='%233d6b93'%3E%3Ccircle cx='110' cy='96' r='8'/%3E%3Ccircle cx='230' cy='70' r='8'/%3E%3C/g%3E%3Crect x='40' y='156' width='280' height='2' fill='%233d6b93' opacity='.3'/%3E%3Ctext x='18' y='32' font-size='12' fill='%232f4f6f' font-family='sans-serif' font-weight='bold'%3E行业观察%3C/text%3E%3C/svg%3E" alt="《身体影像为什么在这两年变多了》封面，浅蓝背景上的上升折线与数据节点">
+            <div class="xg-thumb-mask"></div>
+            <span class="xg-thumb-tag">行业观察</span>
+            <span class="xg-thumb-time">16:48</span>
+            <div class="xg-play"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+          </div>
+          <div class="xg-video-body">
+            <h3 class="xg-video-title">身体影像为什么在这两年变多了</h3>
+            <p class="xg-video-desc">从内容供给到审美转向，一次对垂直领域影像趋势的梳理与访谈记录。</p>
+            <div class="xg-tags"><span class="xg-tag">商业观察</span><span class="xg-tag">内容生态</span></div>
+            <div class="xg-video-foot">
+              <span class="xg-author-mini"><span class="xg-avatar sm" style="background:#6f97b8">编</span>编辑部 · 观察组</span>
+              <span class="xg-actions">
+                <button class="xg-act" type="button" data-xg-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3zm0 0l4.2-7.6a2 2 0 013.6 1.7L14 9h4.6a2 2 0 012 2.4l-1.2 6.2a2 2 0 01-2 1.4H7"/></svg><b>389</b></button>
+                <button class="xg-act" type="button" data-xg-fav aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 16.8 6.9 19.4l1.1-5.6L4 9.9l5.6-.7z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="xg-video-card">
+          <div class="xg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Crect width='360' height='202' fill='%23f7d9a0'/%3E%3Cg fill='%232f4f6f' opacity='.8'%3E%3Crect x='56' y='110' width='70' height='52' rx='8'/%3E%3Crect x='146' y='86' width='58' height='76' rx='8'/%3E%3Crect x='224' y='122' width='84' height='40' rx='8'/%3E%3C/g%3E%3Ccircle cx='88' cy='76' r='14' fill='%23c78e2c'/%3E%3Ctext x='18' y='32' font-size='12' fill='%232f4f6f' font-family='sans-serif' font-weight='bold'%3E生活方式%3C/text%3E%3C/svg%3E" alt="《我的小房间，也是一个拍摄场地》封面，暖黄背景上的房间家具与圆形灯光">
+            <div class="xg-thumb-mask"></div>
+            <span class="xg-thumb-tag">生活方式</span>
+            <span class="xg-thumb-time">08:57</span>
+            <div class="xg-play"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+          </div>
+          <div class="xg-video-body">
+            <h3 class="xg-video-title">我的小房间，也是一个拍摄场地</h3>
+            <p class="xg-video-desc">十平米出租屋的改造记录，用一面墙、一盏灯完成整组身体影像拍摄。</p>
+            <div class="xg-tags"><span class="xg-tag">家居收纳</span><span class="xg-tag">低成本</span></div>
+            <div class="xg-video-foot">
+              <span class="xg-author-mini"><span class="xg-avatar sm" style="background:#c78e2c">禾</span>禾子</span>
+              <span class="xg-actions">
+                <button class="xg-act" type="button" data-xg-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3zm0 0l4.2-7.6a2 2 0 013.6 1.7L14 9h4.6a2 2 0 012 2.4l-1.2 6.2a2 2 0 01-2 1.4H7"/></svg><b>731</b></button>
+                <button class="xg-act" type="button" data-xg-fav aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 16.8 6.9 19.4l1.1-5.6L4 9.9l5.6-.7z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="xg-video-card">
+          <div class="xg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Crect width='360' height='202' fill='%23c9d8e6'/%3E%3Cg fill='none' stroke='%232f4f6f' stroke-width='2.5' opacity='.9'%3E%3Ccircle cx='120' cy='104' r='46'/%3E%3Ccircle cx='250' cy='104' r='30'/%3E%3C/g%3E%3Cg fill='%23e8b04b'%3E%3Ccircle cx='120' cy='104' r='14'/%3E%3Ccircle cx='250' cy='104' r='9'/%3E%3C/g%3E%3Ctext x='18' y='32' font-size='12' fill='%232f4f6f' font-family='sans-serif' font-weight='bold'%3E创作幕后%3C/text%3E%3C/svg%3E" alt="《一组身体影像的诞生：从灵感到成片》封面，蓝灰背景上的镜头与光圈示意图">
+            <div class="xg-thumb-mask"></div>
+            <span class="xg-thumb-tag">创作幕后</span>
+            <span class="xg-thumb-time">19:24</span>
+            <div class="xg-play"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
+          </div>
+          <div class="xg-video-body">
+            <h3 class="xg-video-title">一组身体影像的诞生：从灵感到成片</h3>
+            <p class="xg-video-desc">完整还原一次拍摄流程，包含脚本、选景、沟通与后期调色的真实工作记录。</p>
+            <div class="xg-tags"><span class="xg-tag">幕后记录</span><span class="xg-tag">流程拆解</span></div>
+            <div class="xg-video-foot">
+              <span class="xg-author-mini"><span class="xg-avatar sm" style="background:#3d6b93">牧</span>牧野工作室</span>
+              <span class="xg-actions">
+                <button class="xg-act" type="button" data-xg-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3zm0 0l4.2-7.6a2 2 0 013.6 1.7L14 9h4.6a2 2 0 012 2.4l-1.2 6.2a2 2 0 01-2 1.4H7"/></svg><b>458</b></button>
+                <button class="xg-act" type="button" data-xg-fav aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 16.8 6.9 19.4l1.1-5.6L4 9.9l5.6-.7z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="xg-section xg-section-alt" id="xg-topics">
+    <div class="xg-container">
+      <div class="xg-section-head">
+        <div>
+          <div class="xg-section-kicker">Series &amp; Projects</div>
+          <h2 class="xg-h2">专题企划：<em>持续更新的身体叙事</em></h2>
+          <p class="xg-section-desc">品牌每年推出四季专题，邀请创作者共同完成主题创作，形成可被长期阅读的精品内容。</p>
+        </div>
+        <a class="xg-link-more" href="#xg-help">了解投稿规则 →</a>
+      </div>
+
+      <div class="xg-topic-grid">
+        <article class="xg-topic-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%232f4f6f'/%3E%3Cg fill='none' stroke='%23e8b04b' stroke-width='2' opacity='.8'%3E%3Ccircle cx='200' cy='180' r='90'/%3E%3Ccircle cx='200' cy='180' r='62'/%3E%3C/g%3E%3Ccircle cx='200' cy='180' r='34' fill='%23f7d9a0'/%3E%3Cpath d='M0 320 Q100 270 200 316 T400 296 L400 400 L0 400Z' fill='%233d6b93'/%3E%3C/svg%3E" alt="专题《身体叙事·第一季》封面，深蓝背景中的同心圆与金色光点">
+          <div class="xg-topic-body">
+            <span class="xg-topic-state">更新至第 6 集</span>
+            <h3>身体叙事 · 第一季</h3>
+            <p>六位普通人，六段与身体相处的真实记录，每月更新一集。</p>
+          </div>
+        </article>
+
+        <article class="xg-topic-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f6e7cc'/%3E%3Cg fill='%23c78e2c' opacity='.85'%3E%3Crect x='70' y='120' width='120' height='190' rx='12'/%3E%3Crect x='210' y='80' width='120' height='230' rx='12' opacity='.6'/%3E%3C/g%3E%3Ccircle cx='200' cy='60' r='34' fill='%232f4f6f' opacity='.8'/%3E%3C/svg%3E" alt="专题《光影练习》封面，米色背景上的两块垂直光板与深蓝圆点">
+          <div class="xg-topic-body">
+            <span class="xg-topic-state">征集中 · 12月20日截止</span>
+            <h3>光影练习 · 影像征集</h3>
+            <p>以自然光为主体完成一组身体影像，入选作品将获得官方推荐位。</p>
+          </div>
+        </article>
+
+        <article class="xg-topic-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23dfe9f2'/%3E%3Cg fill='%233d6b93' opacity='.85'%3E%3Cpath d='M120 340c0-56 36-96 80-96s80 40 80 96z'/%3E%3Ccircle cx='200' cy='180' r='52'/%3E%3C/g%3E%3Cg fill='none' stroke='%23e8b04b' stroke-width='3'%3E%3Cpath d='M60 90 L120 130 M340 90 L280 130'/%3E%3C/g%3E%3C/svg%3E" alt="专题《舞者与镜头》封面，浅蓝背景中的舞者剪影与金色线条">
+          <div class="xg-topic-body">
+            <span class="xg-topic-state">已完结 · 共 4 集</span>
+            <h3>舞者与镜头</h3>
+            <p>记录四位职业舞者的训练日常与舞台瞬间，探索身体的表达边界。</p>
+          </div>
+        </article>
+
+        <article class="xg-topic-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23c9d8e6'/%3E%3Cg stroke='%232f4f6f' stroke-width='2.5' fill='none'%3E%3Cpath d='M60 300 L140 200 L220 260 L300 150 L350 200'/%3E%3C/g%3E%3Cg fill='%23e8b04b'%3E%3Ccircle cx='140' cy='200' r='12'/%3E%3Ccircle cx='300' cy='150' r='12'/%3E%3C/g%3E%3Ctext x='50' y='70' font-size='26' fill='%232f4f6f' font-family='sans-serif' font-weight='bold'%3E20%3C/text%3E%3C/svg%3E" alt="专题《身体与城市》封面，蓝灰背景上的折线轨迹与金色节点">
+          <div class="xg-topic-body">
+            <span class="xg-topic-state">更新至第 3 集</span>
+            <h3>身体与城市</h3>
+            <p>在不同城市里寻找适合身体影像的空间，从街角到天台，从清晨到深夜。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="xg-section" id="xg-creators">
+    <div class="xg-container">
+      <div class="xg-section-head">
+        <div>
+          <div class="xg-section-kicker">Creators</div>
+          <h2 class="xg-h2">认证<em>创作者</em>矩阵</h2>
+          <p class="xg-section-desc">他们用镜头与身体对话，是平台内容生态中最重要的一部分，也是品牌持续运营的核心力量。</p>
+        </div>
+        <a class="xg-link-more" href="#xg-help">申请成为创作者 →</a>
+      </div>
+
+      <div class="xg-creator-grid">
+        <article class="xg-creator-card">
+          <div class="xg-creator-top">
+            <span class="xg-avatar lg" style="background:linear-gradient(140deg,#2f4f6f,#3d6b93)">澈</span>
+            <div>
+              <div class="xg-creator-name">阿澈</div>
+              <div class="xg-creator-field">光影 / 人像摄影</div>
+            </div>
+          </div>
+          <p class="xg-creator-bio">独立摄影师，擅长自然光与低饱和色调，主张“让被拍的人感到安全”。</p>
+          <div class="xg-creator-meta"><span>作品 <b>86</b></span><span>关注 <b>4.2万</b></span></div>
+          <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-author="阿澈|光影 / 人像摄影|从业九年，长期拍摄身体与自我关系主题，认为好的影像来自充分沟通。">查看主页</button>
+        </article>
+
+        <article class="xg-creator-card">
+          <div class="xg-creator-top">
+            <span class="xg-avatar lg" style="background:linear-gradient(140deg,#c78e2c,#e8b04b)">野</span>
+            <div>
+              <div class="xg-creator-name">林野</div>
+              <div class="xg-creator-field">康复 / 身体训练</div>
+            </div>
+          </div>
+          <p class="xg-creator-bio">康复治疗师，专注久坐人群的身体功能改善，教程以安全、循序渐进著称。</p>
+          <div class="xg-creator-meta"><span>作品 <b>54</b></span><span>关注 <b>3.6万</b></span></div>
+          <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-author="林野|康复 / 身体训练|十年康复师经验，把专业训练拆解成普通人在家就能完成的动作。">查看主页</button>
+        </article>
+
+        <article class="xg-creator-card">
+          <div class="xg-creator-top">
+            <span class="xg-avatar lg" style="background:linear-gradient(140deg,#6f97b8,#a9c6dd)">南</span>
+            <div>
+              <div class="xg-creator-name">南栀</div>
+              <div class="xg-creator-field">日常记录 / 影像日记</div>
+            </div>
+          </div>
+          <p class="xg-creator-bio">以影像日记记录生活与情绪，作品节奏缓慢，被用户称为“适合深夜看的内容”。</p>
+          <div class="xg-creator-meta"><span>作品 <b>112</b></span><span>关注 <b>6.9万</b></span></div>
+          <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-author="南栀|日常记录 / 影像日记|持续记录身体与情绪的关系，相信真实比精致更有力量。">查看主页</button>
+        </article>
+
+        <article class="xg-creator-card">
+          <div class="xg-creator-top">
+            <span class="xg-avatar lg" style="background:linear-gradient(140deg,#2a3f55,#4d7396)">周</span>
+            <div>
+              <div class="xg-creator-name">周叙</div>
+              <div class="xg-creator-field">人物访谈 / 深度内容</div>
+            </div>
+          </div>
+          <p class="xg-creator-bio">前媒体人，擅长长访谈，提问克制，善于让受访者说出真正想说的话。</p>
+          <div class="xg-creator-meta"><span>作品 <b>48</b></span><span>关注 <b>2.8万</b></span></div>
+          <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-author="周叙|人物访谈 / 深度内容|十年媒体从业经历，把访谈当作理解他人的方式。">查看主页</button>
+        </article>
+
+        <article class="xg-creator-card">
+          <div class="xg-creator-top">
+            <span class="xg-avatar lg" style="background:linear-gradient(140deg,#b07b3a,#d8a75c)">禾</span>
+            <div>
+              <div class="xg-creator-name">禾子</div>
+              <div class="xg-creator-field">家居 / 生活方式</div>
+            </div>
+          </div>
+          <p class="xg-creator-bio">小空间改造爱好者，用有限预算完成拍摄场景搭建，分享可复制的经验。</p>
+          <div class="xg-creator-meta"><span>作品 <b>71</b></span><span>关注 <b>5.1万</b></span></div>
+          <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-author="禾子|家居 / 生活方式|在十平米房间完成两百多组拍摄，热衷低成本改造。">查看主页</button>
+        </article>
+
+        <article class="xg-creator-card">
+          <div class="xg-creator-top">
+            <span class="xg-avatar lg" style="background:linear-gradient(140deg,#3d6b93,#7ba7c7)">牧</span>
+            <div>
+              <div class="xg-creator-name">牧野工作室</div>
+              <div class="xg-creator-field">团队 / 幕后记录</div>
+            </div>
+          </div>
+          <p class="xg-creator-bio">三人内容团队，专注拍摄流程记录与幕后分享，为新人创作者提供参考。</p>
+          <div class="xg-creator-meta"><span>作品 <b>39</b></span><span>关注 <b>2.2万</b></span></div>
+          <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-author="牧野工作室|团队 / 幕后记录|三位影像从业者的共创团队，乐于公开完整工作流。">查看主页</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像墙 -->
+  <section class="xg-section xg-section-alt" id="xg-wall">
+    <div class="xg-container">
+      <div class="xg-section-head">
+        <div>
+          <div class="xg-section-kicker">Gallery</div>
+          <h2 class="xg-h2">用户<em>影像墙</em></h2>
+          <p class="xg-section-desc">来自社区同好的身体影像练习，尺寸不一，风格各异，每一张都值得被看见。</p>
+        </div>
+        <a class="xg-link-more" href="#xg-contact">提交我的作品 →</a>
+      </div>
+
+      <div class="xg-wall">
+        <figure class="xg-wall-item w-lg">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%232f4f6f'/%3E%3Ccircle cx='380' cy='70' r='46' fill='%23e8b04b' opacity='.9'/%3E%3Cg fill='%23eaf1f7' opacity='.85'%3E%3Ccircle cx='150' cy='110' r='28'/%3E%3Cpath d='M100 230c0-34 22-58 50-58s50 24 50 58z'/%3E%3C/g%3E%3Cpath d='M0 220 Q120 170 240 216 T480 200 L480 270 L0 270Z' fill='%233d6b93' opacity='.5'/%3E%3C/svg%3E" alt="影像墙作品《黄昏时的一次伸展》，深蓝背景中伸展身体的人形与金色落日">
+          <figcaption class="xg-wall-cap">黄昏时的一次伸展 · 南栀</figcaption>
+        </figure>
+
+        <figure class="xg-wall-item w-md">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23f6e7cc'/%3E%3Cg fill='%23c78e2c'%3E%3Ccircle cx='150' cy='118' r='36' opacity='.9'/%3E%3Cpath d='M84 260c0-40 30-68 66-68s66 28 66 68z' opacity='.7'/%3E%3C/g%3E%3Ccircle cx='230' cy='70' r='18' fill='%232f4f6f' opacity='.7'/%3E%3C/svg%3E" alt="影像墙作品《窗边的十分钟》，米色背景中的坐姿剪影与深蓝小圆点">
+          <figcaption class="xg-wall-cap">窗边的十分钟 · 禾子</figcaption>
+        </figure>
+
+        <figure class="xg-wall-item w-md">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23dfe9f2'/%3E%3Cg fill='none' stroke='%233d6b93' stroke-width='4'%3E%3Cpath d='M60 220 C90 120 150 260 200 150 S250 110 280 180'/%3E%3C/g%3E%3Ccircle cx='200' cy='150' r='10' fill='%23e8b04b'/%3E%3C/svg%3E" alt="影像墙作品《动作练习的轨迹》，浅蓝背景中流动的曲线与金色节点">
+          <figcaption class="xg-wall-cap">动作练习的轨迹 · 林野</figcaption>
+        </figure>
+
+        <figure class="xg-wall-item w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'%3E%3Crect width='220' height='220' fill='%23c9d8e6'/%3E%3Ccircle cx='110' cy='92' r='38' fill='%232f4f6f' opacity='.85'/%3E%3Cpath d='M52 200c0-36 26-58 58-58s58 22 58 58z' fill='%232f4f6f' opacity='.65'/%3E%3C/svg%3E" alt="影像墙作品《背面》，蓝灰背景中的背影剪影练习">
+          <figcaption class="xg-wall-cap">背面 · 阿澈</figcaption>
+        </figure>
+
+        <figure class="xg-wall-item w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'%3E%3Crect width='220' height='220' fill='%23f7d9a0'/%3E%3Cg fill='%23c78e2c'%3E%3Crect x='46' y='110' width='128' height='52' rx='10'/%3E%3Ccircle cx='110' cy='70' r='26'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《坐在光里》，暖黄背景中的坐姿与圆形光斑">
+          <figcaption class="xg-wall-cap">坐在光里 · 小鹿</figcaption>
+        </figure>
+
+        <figure class="xg-wall-item w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'%3E%3Crect width='220' height='220' fill='%23eaf1f7'/%3E%3Cg stroke='%233d6b93' stroke-width='3' fill='none'%3E%3Ccircle cx='110' cy='110' r='66'/%3E%3Ccircle cx='110' cy='110' r='44'/%3E%3C/g%3E%3Ccircle cx='110' cy='110' r='16' fill='%23e8b04b'/%3E%3C/svg%3E" alt="影像墙作品《同心》，浅色背景中的同心圆与中心金点">
+          <figcaption class="xg-wall-cap">同心 · 周叙</figcaption>
+        </figure>
+
+        <figure class="xg-wall-item w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'%3E%3Crect width='220' height='220' fill='%232f4f6f'/%3E%3Cpath d='M0 160 Q60 120 110 156 T220 140 L220 220 L0 220Z' fill='%23e8b04b' opacity='.55'/%3E%3Ccircle cx='110' cy='86' r='22' fill='%23eaf1f7'/%3E%3C/svg%3E" alt="影像墙作品《海边的那个人》，深蓝背景中的人形与金色海浪">
+          <figcaption class="xg-wall-cap">海边的那个人 · 阿牧</figcaption>
+        </figure>
+
+        <figure class="xg-wall-item w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'%3E%3Crect width='220' height='220' fill='%23f6e7cc'/%3E%3Cg fill='%232f4f6f' opacity='.7'%3E%3Crect x='40' y='80' width='60' height='100' rx='8'/%3E%3Crect x='120' y='50' width='60' height='130' rx='8'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《两块光板》，米色背景中的立式光板与人物比例示意">
+          <figcaption class="xg-wall-cap">两块光板 · 牧野工作室</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 随笔 + 评价 + 榜单 -->
+  <section class="xg-section" id="xg-voices">
+    <div class="xg-container">
+      <div class="xg-section-head">
+        <div>
+          <div class="xg-section-kicker">Voices</div>
+          <h2 class="xg-h2">社区<em>声音</em>与随笔</h2>
+          <p class="xg-section-desc">影像之外的文字补充，来自创作者的随笔与用户真实反馈，构成平台完整的内容生态。</p>
+        </div>
+      </div>
+
+      <div class="xg-essay-grid" style="margin-bottom:34px">
+        <article class="xg-essay">
+          <h3>把相机交给身体，而不是交给审美标准</h3>
+          <p>拍身体这件事，最开始我总想着“怎么拍更好看”。后来发现这个问题本身就带着答案的偏向。真正让我改变的，是一次完全没有造型的拍摄，模特穿着自己的旧T恤，站在下午四点的窗前。那天我们一张都没有修，她说这是她第一次觉得照片里的人是自己。</p>
+          <time datetime="2026-11-12">2026年11月12日 · 阿澈</time>
+        </article>
+        <article class="xg-essay">
+          <h3>身体不会说谎，但它需要被听见</h3>
+          <p>很多来访者第一次做评估时都会说“我没什么问题，就是有点累”。但当我们开始做动作测试，答案往往完全不同。身体一直在发信号，只是我们太习惯忽略它。我开始拍训练视频的初衷，是希望更多人愿意停下来，花十分钟听听自己的肩膀和腰在说什么。</p>
+          <time datetime="2026-11-08">2026年11月8日 · 林野</time>
+        </article>
+      </div>
+
+      <div class="xg-review-grid">
+        <article class="xg-review">
+          <div class="xg-review-top">
+            <span class="xg-avatar sm" style="background:#3d6b93">若</span>
+            <span class="xg-review-name">若水</span>
+            <span class="xg-review-tag">社区用户</span>
+          </div>
+          <div class="xg-stars">★★★★★</div>
+          <p>在这里看了一年多，最大的感受是“不着急”。没有夸张的标题，内容是真的在讲人，看完会觉得身体被理解了一点。</p>
+        </article>
+        <article class="xg-review">
+          <div class="xg-review-top">
+            <span class="xg-avatar sm" style="background:#c78e2c">橙</span>
+            <span class="xg-review-name">橙子汽水</span>
+            <span class="xg-review-tag">创作者</span>
+          </div>
+          <div class="xg-stars">★★★★★</div>
+          <p>作为新人创作者，第一次投稿就收到了编辑的修改建议，很具体也很温和。这种被认真对待的感觉，在别处不太常见。</p>
+        </article>
+        <article class="xg-review">
+          <div class="xg-review-top">
+            <span class="xg-avatar sm" style="background:#6f97b8">小</span>
+            <span class="xg-review-name">小满</span>
+            <span class="xg-review-tag">舞者</span>
+          </div>
+          <div class="xg-stars">★★★★☆</div>
+          <p>训练类内容很实用，动作分解做得细致。如果能再多一些针对不同基础的分级就更好了，整体还是很值得信赖。</p>
+        </article>
+        <article class="xg-review">
+          <div class="xg-review-top">
+            <span class="xg-avatar sm" style="background:#2a3f55">阿</span>
+            <span class="xg-review-name">阿岩</span>
+            <span class="xg-review-tag">摄影爱好者</span>
+          </div>
+          <div class="xg-stars">★★★★★</div>
+          <p>光影练习那期反复看了三遍，第二天就在家试了侧逆光，效果超出预期。教程不藏着掖着，这点很打动人。</p>
+        </article>
+        <article class="xg-review">
+          <div class="xg-review-top">
+            <span class="xg-avatar sm" style="background:#b07b3a">木</span>
+            <span class="xg-review-name">木木</span>
+            <span class="xg-review-tag">社区用户</span>
+          </div>
+          <div class="xg-stars">★★★★☆</div>
+          <p>内容质量挺稳，专题策划有想法。个人希望移动端的播放页能再简洁一点，其他都挺好。</p>
+        </article>
+        <article class="xg-review">
+          <div class="xg-review-top">
+            <span class="xg-avatar sm" style="background:#3d6b93">十</span>
+            <span class="xg-review-name">十七</span>
+            <span class="xg-review-tag">企业合作</span>
+          </div>
+          <div class="xg-stars">★★★★★</div>
+          <p>我们和平台合作过一次专题共创，从策划到成片流程清晰，沟通成本低，成片品质也达到了预期。</p>
+        </article>
+      </div>
+
+      <div class="xg-rank-grid" style="margin-top:30px">
+        <div class="xg-rank-col">
+          <h3>热度榜 · 本周</h3>
+          <ol class="xg-rank-list">
+            <li><span class="xg-rank-no">1</span><span>三十岁，我第一次认真看镜子里的自己</span><span>1.2万</span></li>
+            <li><span class="xg-rank-no">2</span><span>手机也能拍的身体肖像：七个构图思路</span><span>8971</span></li>
+            <li><span class="xg-rank-no">3</span><span>每周三次，重新认识自己的身体</span><span>7620</span></li>
+            <li><span class="xg-rank-no">4</span><span>我的小房间，也是一个拍摄场地</span><span>6315</span></li>
+            <li><span class="xg-rank-no">5</span><span>一组身体影像的诞生</span><span>5402</span></li>
+          </ol>
+        </div>
+        <div class="xg-rank-col">
+          <h3>新人榜 · 本月</h3>
+          <ol class="xg-rank-list">
+            <li><span class="xg-rank-no">1</span><span>晚风不加冰</span><span>+2180</span></li>
+            <li><span class="xg-rank-no">2</span><span>阿岩的练习册</span><span>+1764</span></li>
+            <li><span class="xg-rank-no">3</span><span>木木记录</span><span>+1502</span></li>
+            <li><span class="xg-rank-no">4</span><span>一只快门</span><span>+1310</span></li>
+            <li><span class="xg-rank-no">5</span><span>清晨六点半</span><span>+1188</span></li>
+          </ol>
+        </div>
+        <div class="xg-rank-col">
+          <h3>口碑榜 · 长期</h3>
+          <ol class="xg-rank-list">
+            <li><span class="xg-rank-no">1</span><span>与身体和解的十二个瞬间</span><span>9.7</span></li>
+            <li><span class="xg-rank-no">2</span><span>舞者小满：身体是最诚实的朋友</span><span>9.6</span></li>
+            <li><span class="xg-rank-no">3</span><span>光影练习</span><span>9.5</span></li>
+            <li><span class="xg-rank-no">4</span><span>身体影像为什么在这两年变多了</span><span>9.2</span></li>
+            <li><span class="xg-rank-no">5</span><span>每周三次，重新认识自己的身体</span><span>9.1</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌故事 / 深度解析 -->
+  <section class="xg-deep" id="xg-brand">
+    <div class="xg-container">
+      <div class="xg-deep-box">
+        <div class="xg-section-kicker">Brand Story &amp; Insight</div>
+        <h2>品牌故事：西西gogo人体如何理解身体</h2>
+        <p class="xg-deep-sub">关键词介绍 · 定位与解析</p>
+
+        <p class="no-indent">“西西gogo人体”这个关键词，看起来像是一个轻快的昵称，实际承载的是一个相对严肃的命题：我们如何谈论身体。作为西西gogo人体官方网站，这个视频品牌从成立第一天起就明确了一件事——身体不该被单一审美统治，也不该只作为视觉消费的对象出现。它更接近一本持续更新的影像志，用视频的方式记录普通人与自己身体相处的过程，记录那些不完美、不稳定，但足够真实的瞬间。</p>
+
+        <h3>一个关键词，三种理解层次</h3>
+        <p>在平台的定位里，“西西gogo人体”首先是一个内容方向：身体影像。它包含身体的自述与呈现，也包含与身体有关的技能和知识，例如摄影布光、康复训练、生活方式调整、艺术表达与城市空间探索。其次是社区属性，这个关键词代表一群愿意公开讨论身体的人：他们有各自的困惑与经验，在评论区里交换方法，也交换一点善意。最后是品牌属性，它意味着一种稳定的审美标准和内容标准——不猎奇、不冒犯、不夸大，让观看的人感到被尊重。</p>
+        <p>因此，西西gogo人体官方网站不是一个追求爆款的短视频集合页，而是一个有清晰编辑逻辑的垂直领域平台。我们给内容设了三道门槛：第一，必须与身体或身体经验相关；第二，必须有具体的、可被验证的信息，而不是空泛的情绪表达；第三，必须尊重被拍摄者的意愿，涉及身体的镜头尤其审慎。这三条标准看起来简单，但长期执行下来，反而形成了平台相对稳定的内容生态与口碑。</p>
+
+        <h3>从原创内容到内容生态</h3>
+        <p>平台的内容供给主要来自三部分。第一部分是官方原创，由编辑部与签约创作者共同完成，通常以专题形式呈现，例如《身体叙事》《光影练习》《身体与城市》等系列。这些内容制作周期长，从前期调研到成片往往需要数月，但它们是平台品牌形象的锚点。第二部分是认证创作者供稿，创作者围绕自身擅长的领域持续更新，平台提供选题建议、拍摄支持与分发推荐。第三部分是社区投稿，任何注册用户都可以提交作品，通过编辑审核后进入影像墙或热门流。</p>
+        <p>这三条路径共同构成了一个立体的内容生态：官方内容提供品质基准，创作者内容提供持续供给，社区内容提供活力与多样性。对于用户而言，这意味着无论何时进入站点，都能找到既有专业度、又有真实感的内容；对于创作者而言，这意味着在一个值得信赖的平台上被看见，而不必迎合短期流量。平台所强调的“品质”与“口碑”，其实就是由这种结构慢慢积累出来的。</p>
+
+        <h3>身体美学与行业观察</h3>
+        <p>过去几年，身体影像这一垂直领域发生了明显变化。一方面，拍摄设备门槛下降，手机配合自然光就能完成一组质量不错的作品，这让更多普通人有机会参与创作；另一方面，观众的审美也在变化，过度修饰的影像正在失去吸引力，带一点粗糙感的真实记录反而更容易引发共鸣。西西gogo人体在这两个变化中找到自己的位置：不追求技术炫技，而是强调“记录的有效性”——这段影像是否让人更理解身体，是否提供了可以带走的方法或情绪。</p>
+        <p>我们也观察到，身体议题正在从个人困惑变成公共话题。运动康复、自我接纳、身体边界、拍摄伦理，这些词频繁出现在评论区和投稿说明里。作为一个持续运营的内容平台，我们认为有责任把这些讨论保留下来，而不是让它们被流量机制迅速冲散。因此在产品设计上，我们保留了较长的文字随笔区、详细的投稿指南和公开的常见问题，希望用户在观看之外，也能读到一些更慢的东西。</p>
+
+        <h3>社区、责任与长期主义</h3>
+        <p>平台的社会责任，具体到这件事上，是让身体影像不伤害人。我们制定了拍摄与投稿规范，明确要求创作者在拍摄前取得充分沟通与同意，禁止任何带有窥视意味的角度与剪辑方式；对于涉及未成年人的内容，一律不接收。审核团队会逐条查看投稿，必要时与创作者沟通修改。这些流程会增加成本，但它决定了社区的气质，也决定了品牌能否长期被信任。</p>
+        <p>西西gogo人体希望成为一个“可以待很久”的地方。你来这里，也许是为了学一次布光，也许是为了找一段能陪自己度过情绪低谷的影像，也许只是想看看别人如何与身体相处。无论哪种，我们都希望内容足够专业、足够真实、足够温暖。这是品牌故事里最朴素的部分，也是我们愿意反复讲述的部分。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作伙伴 -->
+  <section class="xg-section xg-section-alt" id="xg-news">
+    <div class="xg-container">
+      <div class="xg-section-head">
+        <div>
+          <div class="xg-section-kicker">Newsroom</div>
+          <h2 class="xg-h2">企业<em>动态</em>与官方发布</h2>
+          <p class="xg-section-desc">平台更新、专题上线、合作与征集信息，均在此处同步发布。</p>
+        </div>
+      </div>
+
+      <div class="xg-news-list">
+        <a class="xg-news-item" href="#xg-topics">
+          <span class="xg-news-date">2026-11-19</span>
+          <span class="xg-news-title">「身体叙事 · 第一季」第六集上线，同步开放观众提问通道</span>
+          <span class="xg-news-kind">专题更新</span>
+        </a>
+        <a class="xg-news-item" href="#xg-help">
+          <span class="xg-news-date">2026-11-15</span>
+          <span class="xg-news-title">「光影练习」影像征集报名开启，投稿截止12月20日</span>
+          <span class="xg-news-kind">征集报名</span>
+        </a>
+        <a class="xg-news-item" href="#xg-creators">
+          <span class="xg-news-date">2026-11-06</span>
+          <span class="xg-news-title">新一批认证创作者名单公示，共 18 位创作者通过审核</span>
+          <span class="xg-news-kind">官方发布</span>
+        </a>
+        <a class="xg-news-item" href="#xg-brand">
+          <span class="xg-news-date">2026-10-28</span>
+          <span class="xg-news-title">平台发布《身体影像拍摄与投稿规范》2.0 版本</span>
+          <span class="xg-news-kind">规则更新</span>
+        </a>
+        <a class="xg-news-item" href="#xg-contact">
+          <span class="xg-news-date">2026-10-16</span>
+          <span class="xg-news-title">与三家影像机构达成内容共创合作，明年推出联合专题</span>
+          <span class="xg-news-kind">品牌合作</span>
+        </a>
+      </div>
+
+      <div class="xg-section-head" style="margin-top:44px">
+        <div>
+          <div class="xg-section-kicker">Partners</div>
+          <h2 class="xg-h2">合作<em>伙伴</em></h2>
+          <p class="xg-section-desc">与影像机构、康复工作室、艺术空间及生活方式品牌共同推进身体议题的公共讨论。</p>
+        </div>
+      </div>
+
+      <div class="xg-partner">
+        <div class="xg-partner-item"><span class="xg-partner-ico">光</span>光合影像空间</div>
+        <div class="xg-partner-item"><span class="xg-partner-ico">衡</span>平衡康复工作室</div>
+        <div class="xg-partner-item"><span class="xg-partner-ico">野</span>野芒艺术空间</div>
+        <div class="xg-partner-item"><span class="xg-partner-ico">慢</span>慢岛生活品牌</div>
+        <div class="xg-partner-item"><span class="xg-partner-ico">记</span>记录者相机俱乐部</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + 联系 -->
+  <section class="xg-section" id="xg-help">
+    <div class="xg-container">
+      <div class="xg-section-head">
+        <div>
+          <div class="xg-section-kicker">FAQ</div>
+          <h2 class="xg-h2">帮助<em>中心</em></h2>
+          <p class="xg-section-desc">关于内容、投稿、版权与合作的常见问题，点击展开查看说明。</p>
+        </div>
+      </div>
+
+      <div class="xg-faq">
+        <details open>
+          <summary>西西gogo人体是一个什么样的平台？</summary>
+          <p>西西gogo人体官方网站是一个专注身体影像的原创视频平台，内容涵盖人物访谈、日常记录、摄影教程、健康训练、生活方式与艺术表达等方向。平台由官方编辑部、认证创作者与社区用户共同构成内容生态，强调真实、专业与尊重。</p>
+        </details>
+        <details>
+          <summary>如何向平台提交自己的作品？</summary>
+          <p>点击页面右上角“投稿入口”即可打开投稿说明，填写作品信息并附上视频文件或链接。编辑团队一般在 7 个工作日内完成初审，通过后会与您联系确认细节。涉及身体镜头的作品，需要提供被拍摄者的书面同意说明。</p>
+        </details>
+        <details>
+          <summary>作品被采纳后会有什么展示位置？</summary>
+          <p>根据内容类型与质量，作品可能进入影像墙、社区热门流或专题企划。入选专题的作品会获得官方推荐位与创作者主页推荐，同时纳入平台的季度精选合集。</p>
+        </details>
+        <details>
+          <summary>平台对拍摄内容有哪些明确限制？</summary>
+          <p>平台禁止任何窥视性角度、未经同意的拍摄、涉及未成年人的身体内容，以及带有明显性暗示的剪辑方式。审核团队会逐条查看投稿，必要时与创作者沟通修改，未通过的作品会说明原因。</p>
+        </details>
+        <details>
+          <summary>我可以在平台下载素材或作品吗？</summary>
+          <p>平台提供的官方素材包仅供创作者在授权范围内用于非商业练习。站内作品版权归创作者所有，如需转载或二次使用，请通过页面底部的联系方式与版权方取得授权。</p>
+        </details>
+        <details>
+          <summary>如何申请成为认证创作者？</summary>
+          <p>在创作者页面点击“申请成为创作者”，提交个人简介、代表作品与更新计划。平台会综合内容质量、更新稳定性与社区反馈进行审核，通常每两个月公示一批名单。</p>
+        </details>
+        <details>
+          <summary>品牌合作与内容共创怎么联系？</summary>
+          <p>可通过页面底部的合作邮箱或联系表单说明合作方向、时间周期与预算范围，品牌团队会在 3 个工作日内回复。我们优先考虑与身体议题相关的长期项目，而非一次性曝光合作。</p>
+        </details>
+      </div>
+
+      <div class="xg-contact-grid" id="xg-contact" style="margin-top:44px">
+        <div class="xg-contact-card">
+          <h3>联系我们 · 共创内容</h3>
+          <p>无论是投稿、合作还是反馈，我们都希望听到具体的声音。请说明你的身份、想做的事以及期望的时间，我们会认真阅读每一封来信。</p>
+          <ul class="xg-contact-list">
+            <li><b>投稿咨询</b> submit@xixigogo-body.example</li>
+            <li><b>品牌合作</b> brand@xixigogo-body.example</li>
+            <li><b>版权与投诉</b> rights@xixigogo-body.example</li>
+            <li><b>工作时间</b> 周一至周五 10:00 – 18:00</li>
+          </ul>
+          <div class="xg-contact-actions">
+            <button class="xg-btn xg-btn-gold xg-btn-sm" type="button" data-xg-modal="submit">打开投稿入口</button>
+            <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-copy>复制投稿邮箱</button>
+            <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-modal="feedback">反馈与举报</button>
+          </div>
+        </div>
+
+        <div class="xg-contact-note">
+          <h3>投稿前的三个小提示</h3>
+          <p>我们不追求宏大的制作，但希望每一份投稿都清楚自己在说什么。</p>
+          <ul>
+            <li>用一句话说明作品想表达的身体经验，比标题更重要。</li>
+            <li>涉及他人出镜，请提前取得同意，并在投稿时注明。</li>
+            <li>如果还没想好，可以先从日常记录开始，我们同样欢迎。</li>
+          </ul>
+          <div class="xg-actions" style="margin-top:14px;gap:8px;flex-wrap:wrap">
+            <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-copy>复制本页链接</button>
+            <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-modal="share">分享给朋友</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="xg-footer">
+  <div class="xg-container">
+    <div class="xg-footer-grid">
+      <div>
+        <div class="xg-footer-brand">
+          <span class="xg-logo-mark">西西</span>
+          <span>
+            <strong>西西gogo人体</strong>
+            <span>XIXI GOGO BODY</span>
+          </span>
+        </div>
+        <p class="xg-footer-desc">西西gogo人体官方网站，专注身体影像的原创视频品牌与内容社区。以专业、真实、温暖的内容，持续陪伴每一位愿意理解自己身体的人。</p>
+      </div>
+      <div>
+        <h4>浏览内容</h4>
+        <ul>
+          <li><a href="#xg-featured">焦点影像</a></li>
+          <li><a href="#xg-stream">社区热门</a></li>
+          <li><a href="#xg-topics">专题企划</a></li>
+          <li><a href="#xg-wall">用户影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#xg-brand">品牌故事</a></li>
+          <li><a href="#xg-creators">创作者矩阵</a></li>
+          <li><a href="#xg-news">企业动态</a></li>
+          <li><a href="#xg-help">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与方式</h4>
+        <ul>
+          <li><button type="button" data-xg-modal="submit" style="color:inherit;font-size:12.5px;padding:0">投稿入口</button></li>
+          <li><button type="button" data-xg-modal="share" style="color:inherit;font-size:12.5px;padding:0">分享本页</button></li>
+          <li><button type="button" data-xg-modal="feedback" style="color:inherit;font-size:12.5px;padding:0">反馈与举报</button></li>
+          <li><a href="#xg-contact">联系与共创</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="xg-footer-bottom">
+      <span>© 2026 西西gogo人体官方网站 · 版权所有 · 持续运营中</span>
+      <span>企业主体：西西gogo人体影像文化有限公司 · 备案号：备字 2026-0000 号</span>
+      <span>本站在中国大陆地区运营，内容均为原创或已获授权</span>
+    </div>
+  </div>
+</footer>
+
+<button class="xg-top-btn" id="xgTopBtn" type="button" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="xg-toast" id="xgToast" role="status" aria-live="polite"></div>
+
+<div class="xg-modal-mask" id="xgModalMask" role="dialog" aria-modal="true" aria-labelledby="xgModalTitle">
+  <div class="xg-modal">
+    <h3 id="xgModalTitle">提示</h3>
+    <p id="xgModalDesc"></p>
+    <div id="xgModalBody"></div>
+    <div class="xg-modal-actions">
+      <button class="xg-btn xg-btn-ghost xg-btn-sm" type="button" data-xg-close>关闭</button>
+      <button class="xg-btn xg-btn-primary xg-btn-sm" type="button" id="xgModalPrimary">我知道了</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById("xgToast");
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    if(toastTimer){ clearTimeout(toastTimer); }
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("is-show"); }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var menuToggle = document.getElementById("xgMenuToggle");
+  var nav = document.getElementById("xgNav");
+  if(menuToggle && nav){
+    menuToggle.addEventListener("click", function(){
+      var open = nav.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    nav.querySelectorAll("a").forEach(function(a){
+      a.addEventListener("click", function(){
+        nav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded","false");
+        nav.querySelectorAll("a").forEach(function(x){ x.classList.remove("is-active"); });
+        a.classList.add("is-active");
+      });
+    });
+  }
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById("xgSearchInput");
+  var searchBtn = document.getElementById("xgSearchBtn");
+  var feedback = document.getElementById("xgSearchFeedback");
+  var searchIndex = [
+    {k:"身体叙事", t:"专题《身体叙事 · 第一季》", a:"#xg-topics"},
+    {k:"光影", t:"《光影练习：一束光如何描绘身体轮廓》", a:"#xg-featured"},
+    {k:"训练", t:"《每周三次，重新认识自己的身体》", a:"#xg-featured"},
+    {k:"访谈", t:"《舞者小满：身体是最诚实的朋友》", a:"#xg-stream"},
+    {k:"阿澈", t:"创作者：阿澈 · 光影 / 人像摄影", a:"#xg-creators"},
+    {k:"林野", t:"创作者：林野 · 康复 / 身体训练", a:"#xg-creators"},
+    {k:"投稿", t:"投稿入口与规则说明", a:"#xg-help"},
+    {k:"合作", t:"品牌合作与内容共创", a:"#xg-contact"}
+  ];
+  function runSearch(){
+    var q = (searchInput.value || "").trim();
+    if(!q){
+      feedback.innerHTML = "试试搜索：<b>身体叙事</b>、<b>光影</b>、<b>训练</b>、<b>阿澈</b>";
+      feedback.classList.add("is-open");
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      return item.k.indexOf(q) > -1 || item.t.indexOf(q) > -1;
+    });
+    if(hits.length){
+      feedback.innerHTML = "找到 " + hits.length + " 条相关内容：" + hits.slice(0,3).map(function(h){
+        return '<a href="' + h.a + '" style="color:#2f4f6f;font-weight:600">' + h.t + '</a>';
+      }).join("；");
+    }else{
+      feedback.innerHTML = "暂时没有匹配「" + q + "」的内容，可尝试「身体」「光影」「投稿」等关键词。";
+    }
+    feedback.classList.add("is-open");
+  }
+  if(searchBtn){ searchBtn.addEventListener("click", runSearch); }
+  if(searchInput){
+    searchInput.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); runSearch(); }
+    });
+    searchInput.addEventListener("input", function(){
+      if(!searchInput.value.trim()){ feedback.classList.remove("is-open"); }
+    });
+    searchInput.addEventListener("focus", function(){
+      feedback.innerHTML = "试试搜索：<b>身体叙事</b>、<b>光影</b>、<b>训练</b>、<b>投稿</b>";
+      feedback.classList.add("is-open");
+    });
+  }
+  document.addEventListener("click", function(e){
+    if(feedback && feedback.classList.contains("is-open")){
+      var box = searchInput ? searchInput.parentNode : null;
+      if(box && !box.contains(e.target)){ feedback.classList.remove("is-open"); }
+    }
+  });
+
+  /* 点赞 +1 / -1 */
+  document.querySelectorAll("[data-xg-like]").forEach(function(btn){
+    var b = btn.querySelector("b");
+    btn.addEventListener("click", function(){
+      var on = btn.classList.toggle("is-on");
+      var n = parseInt((b.textContent || "0").replace(/[^\d]/g, ""), 10) || 0;
+      n = on ? n + 1 : Math.max(0, n - 1);
+      b.textContent = n;
+      showToast(on ? "已点赞，感谢你的支持" : "已取消点赞");
+    });
+  });
+
+  /* 收藏切换 */
+  document.querySelectorAll("[data-xg-fav]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var on = btn.classList.toggle("is-on");
+      var svg = btn.querySelector("svg");
+      if(svg){ svg.setAttribute("fill", on ? "currentColor" : "none"); }
+      showToast(on ? "已收藏到我的影像夹" : "已取消收藏");
+    });
+  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll("[data-xg-count]");
+  function animateCount(el){
+    var target = parseInt(el.getAttribute("data-xg-count"), 10) || 0;
+    var small = el.querySelector("small");
+    var start = 0, dur = 1100, t0 = null;
+    function step(ts){
+      if(!t0){ t0 = ts; }
+      var p = Math.min((ts - t0) / dur, 1);
+      var val = Math.floor(start + (target - start) * (1 - Math.pow(1 - p, 3)));
+      el.firstChild.nodeValue = val;
+      if(p < 1){ requestAnimationFrame(step); }
+      else { el.firstChild.nodeValue = target; }
+    }
+    requestAnimationFrame(step);
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ animateCount(en.target); io.unobserve(en.target); }
+      });
+    }, {threshold:.4});
+    counters.forEach(function(c){ io.observe(c); });
+  }else{
+    counters.forEach(animateCount);
+  }
+
+  /* 弹窗 */
+  var mask = document.getElementById("xgModalMask");
+  var modalTitle = document.getElementById("xgModalTitle");
+  var modalDesc = document.getElementById("xgModalDesc");
+  var modalBody = document.getElementById("xgModalBody");
+  var modalPrimary = document.getElementById("xgModalPrimary");
+
+  var modalContent = {
+    submit: {
+      title: "投稿入口",
+      desc: "欢迎提交与身体影像相关的原创作品。请准备好作品文件或链接，以及一段简短的作品说明。",
+      body: '<ul class="xg-modal-list">' +
+            '<li><span class="xg-avatar" style="width:30px;height:30px;border-radius:9px;background:#3d6b93">1</span>填写作品信息与主创联系方式</li>' +
+            '<li><span class="xg-avatar" style="width:30px;height:30px;border-radius:9px;background:#c78e2c">2</span>上传作品或提供可用链接</li>' +
+            '<li><span class="xg-avatar" style="width:30px;height:30px;border-radius:9px;background:#2f4f6f">3</span>编辑初审，7 个工作日内答复</li>' +
+            '</ul>',
+      primary: "发送投稿邮件"
+    },
+    share: {
+      title: "分享本页",
+      desc: "把这页分享给同样关注身体影像的朋友，或复制链接保存到自己的收藏夹。",
+      body: '<ul class="xg-modal-list">' +
+            '<li><span class="xg-avatar" style="width:30px;height:30px;border-radius:9px;background:#3d6b93">微</span>微信：复制链接后在聊天中粘贴</li>' +
+            '<li><span class="xg-avatar" style="width:30px;height:30px;border-radius:9px;background:#c78e2c">博</span>微博：复制链接后发布分享</li>' +
+            '<li><span class="xg-avatar" style="width:30px;height:30px;border-radius:9px;background:#2f4f6f">Q</span>QQ：复制链接后发送给好友</li>' +
+            '</ul>',
+      primary: "复制链接"
+    },
+    feedback: {
+      title: "反馈与举报",
+      desc: "如发现不当内容、版权问题或功能异常，请说明具体页面与问题描述，我们会在工作时间内处理。",
+      body: '<p style="font-size:13px;color:#5d6d7c">可发送邮件至 rights@xixigogo-body.example，标题请注明「反馈」或「举报」。对于涉及身体隐私的内容，我们会优先处理。</p>',
+      primary: "复制反馈邮箱"
+    }
+  };
+
+  function openModal(key){
+    var data = modalContent[key];
+    if(!data){ return; }
+    modalTitle.textContent = data.title;
+    modalDesc.textContent = data.desc;
+    modalBody.innerHTML = data.body || "";
+    modalPrimary.textContent = data.primary || "我知道了";
+    modalPrimary.setAttribute("data-xg-modal-key", key);
+    mask.classList.add("is-open");
+  }
+  function closeModal(){ mask.classList.remove("is-open"); }
+
+  document.querySelectorAll("[data-xg-modal]").forEach(function(btn){
+    btn.addEventListener("click", function(){ openModal(btn.getAttribute("data-xg-modal")); });
+  });
+  document.querySelectorAll("[data-xg-close]").forEach(function(btn){
+    btn.addEventListener("click", closeModal);
+  });
+  mask.addEventListener("click", function(e){
+    if(e.target === mask){ closeModal(); }
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){ closeModal(); }
+  });
+
+  modalPrimary.addEventListener("click", function(){
+    var key = modalPrimary.getAttribute("data-xg-modal-key");
+    if(key === "share"){ copyText(buildShareText(), "链接已复制，可粘贴分享"); }
+    else if(key === "feedback"){ copyText("rights@xixigogo-body.example", "反馈邮箱已复制"); }
+    else { copyText("submit@xixigogo-body.example", "投稿邮箱已复制，期待你的作品"); }
+  });
+
+  /* 复制链接 / 邮箱 */
+  function buildShareText(){
+    return "西西gogo人体 · 身体影像品牌官网，记录真实、温暖、有力量的身体故事。";
+  }
+  function copyText(text, okMsg){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast(okMsg);
+        closeModal();
+      }).catch(function(){
+        fallbackCopy(text, okMsg);
+      });
+    }else{
+      fallbackCopy(text, okMsg);
+    }
+  }
+  function fallbackCopy(text, okMsg){
+    try{
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly","");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+      showToast(okMsg);
+      closeModal();
+    }catch(err){
+      showToast("复制未成功，请手动选择内容");
+    }
+  }
+  document.querySelectorAll("[data-xg-copy]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var isMail = btn.textContent.indexOf("邮箱") > -1;
+      copyText(isMail ? "submit@xixigogo-body.example" : buildShareText(),
+               isMail ? "投稿邮箱已复制" : "链接已复制，可粘贴分享");
+    });
+  });
+
+  /* 作者弹窗 */
+  var authorModalLike = true;
+  document.querySelectorAll("[data-xg-author]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var parts = (btn.getAttribute("data-xg-author") || "").split("|");
+      modalTitle.textContent = parts[0] || "创作者主页";
+      modalDesc.textContent = parts[1] || "";
+      modalBody.innerHTML = '<p style="font-size:13px;color:#5d6d7c;line-height:1.85">' +
+        (parts[2] || "该创作者持续在平台更新内容，欢迎关注其主页获取最新作品。") + '</p>' +
+        '<p style="font-size:12.5px;color:#3d6b93;margin-top:10px">主页状态：认证创作者 · 持续更新中</p>';
+      modalPrimary.textContent = "关注该创作者";
+      modalPrimary.setAttribute("data-xg-modal-key", "author");
+      mask.classList.add("is-open");
+    });
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById("xgTopBtn");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 480){ topBtn.classList.add("is-show"); }
+    else{ topBtn.classList.remove("is-show"); }
+  }, {passive:true});
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+  /* 锚点滚动偏移（补足吸顶高度） */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click", function(e){
+      var id = a.getAttribute("href");
+      if(id.length < 2){ return; }
+      var target = document.querySelector(id);
+      if(!target){ return; }
+      e.preventDefault();
+      var offset = document.querySelector(".xg-sticky-wrap").offsetHeight + 12;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({top: top, behavior:"smooth"});
+    });
+  });
+
+  /* 作者关注按钮复用主按钮逻辑 */
+  var originalPrimaryClick = null;
+  modalPrimary.addEventListener("click", function(){
+    if(modalPrimary.getAttribute("data-xg-modal-key") === "author"){
+      showToast("已关注，更新将出现在你的动态里");
+      closeModal();
+    }
+  });
+
+})();
+</script>
+</body>
+  </html>
